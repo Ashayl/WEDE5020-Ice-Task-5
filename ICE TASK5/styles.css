@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navigation {
+    background-color: #333;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Default display as horizontal */
+}
+
+.navigation li {
+    flex: 1; /* Equal space for each item */
+}
+
+.navigation a {
+    display: block;
+    padding: 14px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: #575757;
+}
+
+/* Media Query for mobile screens */
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column; /* Change to column on mobile */
+    }
+
+    .navigation li {
+        width: 100%; /* Full width for list items */
+    }
+}
